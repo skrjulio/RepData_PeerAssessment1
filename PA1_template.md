@@ -26,7 +26,7 @@ hist(steps_per_day, col = "blue", main = "Histogram of Total Steps Taken per Day
      xlab = "Total Steps Taken per Day")
 ```
 
-![](PA1_files/figure-html/histogram-1.png) 
+![](PA1_template_files/figure-html/histogram-1.png) 
 
 
 ```r
@@ -45,7 +45,7 @@ avg_steps_across_days <- tapply(activity$steps, activity$interval, mean, na.rm =
 plot(int, avg_steps_across_days, type = "l", main = "Time series of average number of steps (averaged across all days)", xlab = "5-minute intervals", ylab = "Average number of steps")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 Determine the 5-minute interval that contains the maximum number of steps.
 
@@ -93,7 +93,7 @@ hist(steps_per_day_NA_rem, col = "blue", main = "Histogram of total steps taken 
      xlab = "Total steps taken per day")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
  
 Mean and median of dataset where NAs have been replaced.
 
@@ -139,5 +139,5 @@ mtext(outer=T, side=1, line=1, text="Interval")  #caption for x-axis
 mtext(outer=T, side=2, line=1, text="Number of steps taken")  #caption for y-axis
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-12-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
 
